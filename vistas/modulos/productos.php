@@ -62,6 +62,7 @@ if($_SESSION["perfil"] == "Vendedor"){
            <th>Descripción</th>
            <th>Categoría</th>
            <th>Stock</th>
+           <th>Se vende por</th>
            <th>Precio de compra</th>
            <th>Precio de venta</th>
            <th>Agregado</th>
@@ -162,6 +163,23 @@ MODAL AGREGAR PRODUCTO
 
             </div>
 
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+
+                <select class=" input-lg  form-control  " style="width: 100%;height: 75%;" id="nuevaVentapor" name="nuevaVentapor" required>
+                  
+                  <option value="" disabled selected>Se Vende Por</option>
+                  <option value="0" >Unidad</option>
+                  <option value="1" >Gramos</option>
+  
+                </select>
+
+              </div>
+
+            </div>
             <!-- ENTRADA PARA LA DESCRIPCIÓN -->
 
              <div class="form-group">

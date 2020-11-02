@@ -59,7 +59,23 @@ class TablaProductos{
 
   				$stock = "<button class='btn btn-success'>".$productos[$i]["stock"]."</button>";
 
-  			}
+			  }
+			  
+			
+  			if($productos[$i]["se_vende_por"] == 0){
+
+				$se_vende = "<p> Unidad </p>";
+
+			}else if($productos[$i]["se_vende_por"] == 1 ){
+
+				$se_vende = "<p> Gramos </p>";
+
+			}else{
+
+				$se_vende = "<p> Nada registrado </p>";
+
+			}
+
 
 		  	/*=============================================
  	 		TRAEMOS LAS ACCIONES
@@ -81,7 +97,8 @@ class TablaProductos{
 			      "'.$productos[$i]["codigo"].'",
 			      "'.$productos[$i]["descripcion"].'",
 			      "'.$categorias["categoria"].'",
-			      "'.$stock.'",
+				  "'.$stock.'",
+				  "'.$se_vende.'",
 			      "'.$productos[$i]["precio_compra"].'",
 			      "'.$productos[$i]["precio_venta"].'",
 			      "'.$productos[$i]["fecha"].'",

@@ -42,7 +42,7 @@ if($_SESSION["perfil"] == "Especial"){
       EL FORMULARIO
       ======================================-->
       
-      <div class="col-lg-5 col-xs-12">
+      <div class="col-md-5">
         
         <div class="box box-success">
           
@@ -166,11 +166,7 @@ if($_SESSION["perfil"] == "Especial"){
 
                 <input type="hidden" id="listaProductos" name="listaProductos">
 
-                <!--=====================================
-                BOTÓN PARA AGREGAR PRODUCTO
-                ======================================-->
-                <button type="button" class="btn btn-default hidden-lg btnAgregarProducto">Agregar producto</button>
-
+  
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Visualizar Tasa del dia</button>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCliente">Registar Cliente</button>
 
@@ -409,7 +405,7 @@ if($_SESSION["perfil"] == "Especial"){
       LA TABLA DE PRODUCTOS
       ======================================-->
 
-      <div class="col-lg-7 hidden-md hidden-sm hidden-xs">
+      <div class="col-md-7">
         
         <div class="box box-warning">
 
